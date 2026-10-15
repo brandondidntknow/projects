@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin:0;
+    width:100%;
+    padding:0;
+}
+/*comment header section  */
+header {
+    background-color: #f8f9fa;
+    padding: 15px;
+    text-align: center;
+    height:15%;
+    width:100%;
+}
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+nav ul {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 75px;
+}
+nav ul li a{
+    text-decoration: underline;
+    color: #333;
+    padding:45px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* comment img-container section */
+.img-container {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/013/087/516/small/diagonal-golden-line-glass-cube-on-black-background-illustration-of-website-banner-poster-sign-corporate-business-social-media-post-billboard-agency-advertising-media-motion-video-animation-wave-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:450px;
+    margin: 0;
+}
+.img-text {
+    background-color:white;
+    padding: 20px;
+    width:100%;
+    text-align: center;
+
+}
+.img-text h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #333;
+    text-transform: uppercase;
+}
+/* comment portfolio section */
+.portfolio-grid-container {
+    display: grid;
+    grid-template:1fr 1fr / 1fr 1fr;
+    padding-left: 75px;
+}
+.portfolio-item img {
+    max-width: 90%;
+    height: 50%;
+    object-fit: cover;
+}
+/* comment our-team section */
+.our-team {
+    width: 100%;
+    height:auto;
+    margin: 0;
+    padding: 0;
+}
+.our-team-main {
+    background-image: url("https://img.magnific.com/free-photo/corporate-strategy-financial-growth-modern-business-environment_84443-73946.jpg?semt=ais_hybrid&w=740&q=80");
+    width: 100%;
+    height:600px;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    display:grid;
+    grid-template: 1fr/ 1fr 1fr;
+    justify-items: center;
+    
+    
+}
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+   
+}
+.team-member img {
+    object-fit: cover;
+    width:70%;
+    height: 80%;
+}
+.team-member h3, .team-member p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color:white;
+    font-weight: bold;
+}
+/* comment contact section */
+.contact-info { 
+    background-color:lightpink;
+    font-weight: bold;
+    color:white;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+}
+.our-team  h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}

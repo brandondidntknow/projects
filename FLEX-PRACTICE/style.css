@@ -1,0 +1,165 @@
+body {
+    font-family:Helvetica;
+    background-color: black;
+    text-align: center;
+    color:seashell;
+    opacity: 0.9;
+}
+header {
+    position:fixed;
+    height:69px;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    width:100%;
+    display:flex;
+    align-items:center;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+nav li {
+    justify-content: flex-start;
+    display: inline-flex;
+    padding-right: 15px;
+    
+}
+a {
+    text-decoration:underline;
+    color:seashell;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* end of header */
+
+.mission {
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    height:700px;
+    display:flex;
+    margin-top: 60px;
+    align-items:center;
+    justify-content:center;
+    background-size: cover;
+    margin:0px 10px 15px 10px;
+
+}
+.mission-text {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:black;
+    width:100%;
+    height:150px;
+    flex-direction: column;
+}
+.color {
+    color:seashell;
+}
+.mission-text h2 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+.mission-text h4 {
+    font-size: 15px;
+    margin-top: 17px;
+}
+.tea {
+    display:flex;
+    justify-content:space-around;
+    margin: 20px 10px 20px 10px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.featured-image img {
+    height: 200px;
+    width:300px;
+    margin-bottom: 10px;
+
+}
+.featured-text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.featured-text h2,
+.featured-text h4 {
+    flex-basis: 100%;
+}
+.locations {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg');
+    height: 700px;
+    width: 90%;
+    margin: 15px auto;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.locations-text h2 {
+    flex-basis: 100%;
+    font-size: 42px;
+    margin: 0 0 20px 0;
+}
+.locations-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.black-bg {
+    background-color:black;
+    opacity:1;
+}
+.inflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.directions {
+    width: 300px;
+    height:auto;
+    margin: 20px;
+    background-color: black;
+}
+footer {
+    height:30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: black;
+}
+.footer-text {
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+    height:100%;
+}
+.small {
+    font-size: 8px;
+}
+.contact {
+    height:200px;
+    margin: 20px 10px 20px 10px;
+}
+.grow {
+    flex-grow: 2;
+}
