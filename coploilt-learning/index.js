@@ -10,5 +10,5 @@ const players = [{
   name: "John",
   score: 75
 }];
-players.sort((a,b) => b-a);
-console.log(players);
+const topNames = players.filter(player => player.score >= 80).map(player => player.name);
+console.log(topNames)

@@ -1,0 +1,141 @@
+/* SUN MODE — remove crescent when bg is beige */
+html[style*="--bg: beige"] button::before {
+    box-shadow: none;
+}
+html {
+    background-color: var(--bg);
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding:0;
+
+}
+ul {
+    margin-top: 1rem;
+}
+li {
+    margin-bottom: 0.5rem;
+}
+h2 , h3 , p {
+    margin-bottom: 1.2rem;
+}
+@media (max-width:600px) {
+    h1,h2,h3,p {
+       
+       margin-bottom: 1rem;
+    }
+}
+/* variables for dark-light */
+:root {
+    --bg : beige;
+    --text : black;
+    --border :  rgb(180, 170, 160);
+    --section-bg : floralwhite;
+    --header-bg: blanchedalmond;
+}
+/* header section */
+header {
+    border-bottom: 2px var(--border) solid;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--section-bg);
+    width: 100%;
+    margin-bottom: 2rem;
+    color: var(--text);
+
+}
+header nav {
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 1.5rem 1rem;
+
+}
+header nav  ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 3rem;
+    margin: 0;
+}
+header nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.75s;
+    color: var(--text);
+}
+header nav a:hover {
+    color:red;
+    text-transform: uppercase;
+    transition: 0.75s;
+    
+}
+@media (max-width:600px) {
+    header nav ul {
+        flex-direction: column;
+        gap:1rem;
+        text-align: center;
+    }
+}
+#toggle-item {
+    color: var(--text);
+    background-color: var(--section-bg);
+
+}
+button::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--text);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -4px 0 0 var(--section-bg);
+}
+button {
+    width: 24px;
+    height: 24px;
+    background-color: var(--section-bg);
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px var(--border) solid;
+    position: relative;
+
+}
+button:hover {
+    background-color: var(--bg);
+}
+/* Sections  */
+section {
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    max-width: 1200px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--section-bg);
+    color: var(--text);
+}
+@media (max-width:600px) {
+    section , #contact, footer {
+       padding:1rem 0.5rem;
+    }
+}
+/*contact footer */
+#contact {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem 1.5rem;
+    background-color: var(--section-bg);
+    border-bottom: 1px solid var(--border);
+   
+}
+
+/* footer */
+footer {
+    padding:1rem;
+    background-color: var(--section-bg);
+}
